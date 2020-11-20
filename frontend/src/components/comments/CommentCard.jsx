@@ -39,47 +39,47 @@ export default function CommentCard({
       }}
     />
   ) : (
-    <article className="comment">
-      <div className="comment-poster">
-        <i className="fas fa-user-alt"></i> {comment.user.name}
-      </div>
-
-      <div className="one-comment">
-        <div className="comment-text">
-          <i className="far fa-comment"></i> {comment.body}
+      <article className="comment">
+        <div className="comment-poster">
+          <i className="fas fa-user-alt"></i> {comment.user.name}
         </div>
-        <div className="comment-option">
-          <div className="comment-option-reaction">
-            <button className="one-comment-button" onClick={incrementLike}>
-              <i className="fas fa-thumbs-up"></i> {reaction.numLike}
-            </button>
-            <button className="one-comment-button" onClick={incrementDislike}>
-              <i className="fas fa-thumbs-down"></i> {reaction.numDislike}
-            </button>
-            <div className="comment-option-email">
-              <i className="fas fa-envelope"></i> {comment.user.email}
-            </div>
+
+        <div className="one-comment">
+          <div className="comment-text">
+            <i className="far fa-comment"></i> {comment.body}
           </div>
-
-          {comment.user.id === user.id ? (
-            <div className="comment-edit">
-              <button
-                className="one-comment-button"
-                onClick={() => onDeleteClick(comment)}
-              >
-                <i className="fas fa-trash-alt"></i> Delete
+          <div className="comment-option">
+            <div className="comment-option-reaction">
+              <button className="one-comment-button" onClick={incrementLike}>
+                <i className="fas fa-thumbs-up"></i> {reaction.numLike}
               </button>
-
-              <button
-                className="one-comment-button"
-                onClick={handleUpdateClick}
-              >
-                <i className="fas fa-edit"> </i>Edit
+              <button className="one-comment-button" onClick={incrementDislike}>
+                <i className="fas fa-thumbs-down"></i> {reaction.numDislike}
               </button>
+              <div className="comment-option-email">
+                <i className="fas fa-envelope"></i> {comment.user.email}
+              </div>
             </div>
-          ) : null}
+
+            {comment.user.id === user.id ? (
+              <div className="comment-edit">
+                <button
+                  className="one-comment-button"
+                  onClick={() => onDeleteClick(comment)}
+                >
+                  <i className="fas fa-trash-alt"></i> Delete
+              </button>
+
+                <button
+                  className="one-comment-button"
+                  onClick={handleUpdateClick}
+                >
+                  <i className="fas fa-edit"> </i>Edit
+              </button>
+              </div>
+            ) : null}
+          </div>
         </div>
-      </div>
-    </article>
-  );
+      </article>
+    );
 }

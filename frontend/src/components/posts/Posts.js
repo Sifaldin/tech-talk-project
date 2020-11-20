@@ -54,14 +54,14 @@ export default function Posts() {
 
       {status === 1
         ? posts.map((post) => (
-            <PostCard
-              key={post.id}
-              post={post}
-              onUpdateClick={updatePost}
-              onDeleteClick={deletePost}
-              user={user}
-            />
-          ))
+          <PostCard
+            key={post.id}
+            post={post}
+            onUpdateClick={updatePost}
+            onDeleteClick={deletePost}
+            user={user}
+          />
+        ))
         : null}
     </div>
   );

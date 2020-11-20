@@ -15,32 +15,5 @@ export default function CommentsForm({ onCreateClick }) {
         <i className="fas fa-reply"></i>
       </button>
     </div>
-
-    // <div className="one-post card mt-3">
-    //   <div className="quick-post">
-    //     <h5 className="comment-post card-title"><i className="far fa-comment"></i> What do you think about this?</h5>
-    //     <div>
-    //       <div className="">
-    //         <input
-    //           type="text"
-    //           size="10"
-    //           className="form-control"
-    //           placeholder= "Wow ! great !"
-    //           value={body}
-    //           onChange={(e) => setBody(e.target.value)}
-    //         />
-    //       </div>
-
-    //       <div className="form-group">
-    //         <button
-    //           className="btn btn-info"
-    //           onClick={() => onCreateClick({ body })}
-    //         >
-    //           Share
-    //         </button>
-    //       </div>
-    //       </div>
-    //       </div>
-    //       </div>
   );
 }

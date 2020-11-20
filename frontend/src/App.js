@@ -29,12 +29,9 @@ function App() {
           <Route path="/posts">
             <Posts />
           </Route>
+
           <Route path="/comments">
             <Comments />
-          </Route>
-
-          <Route path="/chat">
-            <ChatPage />
           </Route>
 
           <Route path="/">
