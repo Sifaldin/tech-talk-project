@@ -1,7 +1,7 @@
 # My Online Forum
 
 Your task for this part of the module will be to take the Spring + React template
-application you have received and turn it into an online discussion forum! As you
+to turn it into an online discussion forum! As you
 see, some parts have been done for you. For example, you will not need to worry about how
 to handle the authentication (registration and login) as that has already been fixed.
 
